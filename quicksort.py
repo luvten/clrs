@@ -1,5 +1,6 @@
 __author__ = 'cuijianing'
 from base import swap
+import random
 def QUICKSORT(A,p,r):
     if p<r:
         q=PARTITION(A,p,r)
@@ -17,6 +18,8 @@ def PARTITION(A,p,r):
     return i+1
 
 if __name__ == '__main__':
-    A=[5,4,2,1,3,0]
+    A=[0]*100
+    for i in range(100):
+        A[i]=random.randint(1,100)
     QUICKSORT(A,0,len(A)-1)
     print A
