@@ -1,5 +1,5 @@
 __author__ = 'cuijianing'
-from heapSort import swap
+from base import swap
 def QUICKSORT(A,p,r):
     if p<r:
         q=PARTITION(A,p,r)
