@@ -51,8 +51,9 @@ def HEAP_INCREASE_KEY(A,i,key):
         swap(A,i,parent(i))
         i=parent(i)
 
+
 if __name__ == '__main__':
-    A=[17,27,3,16,13,10,1,5,7,12,4,8,9,0]
+    A=genarray(1,100,100)
     heapsize=len(A)
     HEAPSORT(A)
     print A

@@ -1,5 +1,7 @@
 __author__ = 'cuijianing'
+#1111
 import random
+from base import *
 def insertionSort(a):
     for j in range(1,len(a)):
         key=a[j]
@@ -69,11 +71,7 @@ def merge(a,p,q,r):
         k+=1
 
 if __name__ == '__main__':
-    a=[]
-    i=0
-    while i<100:
-        a.append(random.randint(0,100))
-        i+=1
+    a=genarray(1,100,100)
     #insertionSort(a)
     #deInsertionhSort(a)
     #selectionSort(a)
